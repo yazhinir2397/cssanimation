@@ -1,0 +1,30 @@
+/*CSS Animations : name , duration , delay , iteration count , play state*/
+  div {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: box;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+    animation-play-state:running;
+    animation-direction: alternate-reverse; 
+    animation: box 2s linear 2s 2 forwards running; 
+  }
+
+
+  @keyframes box {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+ 
+
+
+  /*Short hand-property for animation
+
+  animation: name duration timing-function delay iteration-count direction fill-mode play-state; */
